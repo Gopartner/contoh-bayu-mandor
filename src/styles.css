@@ -1,0 +1,47 @@
+/* styles.css */
+
+/* Define animation for the neon glow effect */
+@keyframes neonGlow {
+  0% {
+    text-shadow: 
+      0 0 5px rgba(255, 0, 0, 0.8), /* Red */
+      0 0 10px rgba(255, 0, 0, 0.8),
+      0 0 15px rgba(255, 0, 0, 0.8),
+      0 0 20px rgba(255, 255, 0, 0.8), /* Yellow */
+      0 0 30px rgba(255, 255, 0, 0.8),
+      0 0 40px rgba(255, 192, 203, 0.8), /* Pink */
+      0 0 50px rgba(255, 192, 203, 0.8),
+      0 0 60px rgba(0, 255, 0, 0.8); /* Green */
+  }
+  50% {
+    text-shadow: 
+      0 0 5px rgba(255, 255, 0, 0.8), /* Yellow */
+      0 0 10px rgba(255, 255, 0, 0.8),
+      0 0 15px rgba(255, 255, 0, 0.8),
+      0 0 20px rgba(255, 192, 203, 0.8), /* Pink */
+      0 0 30px rgba(255, 192, 203, 0.8),
+      0 0 40px rgba(0, 255, 0, 0.8), /* Green */
+      0 0 50px rgba(0, 255, 0, 0.8),
+      0 0 60px rgba(255, 0, 0, 0.8); /* Red */
+  }
+  100% {
+    text-shadow: 
+      0 0 5px rgba(255, 192, 203, 0.8), /* Pink */
+      0 0 10px rgba(255, 192, 203, 0.8),
+      0 0 15px rgba(255, 192, 203, 0.8),
+      0 0 20px rgba(0, 255, 0, 0.8), /* Green */
+      0 0 30px rgba(0, 255, 0, 0.8),
+      0 0 40px rgba(255, 255, 0, 0.8), /* Yellow */
+      0 0 50px rgba(255, 255, 0, 0.8),
+      0 0 60px rgba(255, 0, 0, 0.8); /* Red */
+  }
+}
+
+.text-neon {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  animation: neonGlow 1.5s infinite alternate;
+}
+
